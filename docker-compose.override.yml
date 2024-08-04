@@ -1,4 +1,5 @@
 services:
    auto:
+     restart: unless-stopped
      environment:
        - CLI_ARGS=--xformers --opt-split-attention --api --enable-insecure-extension-access --allow-code --vae-path models/VAE/vae-ft-mse-840000-ema-pruned.ckpt
